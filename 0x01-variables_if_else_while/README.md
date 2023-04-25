@@ -1,1 +1,1 @@
-assign a random number
+Script to assign a random number
