@@ -2,8 +2,8 @@
 
 /**
  * _isomer - check if char is lower case
- * @c: the char to be checked
- * Return: 1 if char is lowercase, other 0.
+ * @c:is the char to be checked
+ * Return: 1 if char is lowercase, otherwise 0.
  */
 
 int _islower(int c)
