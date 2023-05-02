@@ -2,24 +2,22 @@
 
 /**
  * rev_length - prints a string in reverse
- * @s: pointer pointint to the string
- * Return: 0
+ * @s: input  string
+ * Return: string in reverse
  */
-
 void rev_string(char *s)
 {
-	int length, z, half;
-	char temp;
+	char rev = s[0];
+	int counter = 0;
+	int i;
 
-	for (length = 0; s[length] != '\0'; length++);
-	z = 0;
-	half = length / 2;
-
-	while (half--)
+	while (s[counter] != '\0')
+		counter++;
+	for (i = 0; i < counter; i++)
 	{
-		temp = s[length - z - 1];
-		s[z] = temp;
-		z++;
+		counter--;
+		rev = s[i];
+		s[i] = s[counter];
+		s[counter] = rev;
 	}
 }
-			
